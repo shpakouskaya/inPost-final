@@ -1,0 +1,21 @@
+<div class="qr-info-section-wrap">
+  <h1>Twój kod QR</h1>
+
+  <div class="qr-info-section-content">
+    <img [src]="QRInfo.qrcode" alt="qr">
+
+    <div class="qr-info-text">
+      <p>Data ważności:</p>
+      <p class="qr-date">{{ QRInfo.expirationDate }}</p>
+
+      <ng-container *ngIf="isSuccessGetPack">
+        <p>{{ QRInfo!.size }}</p>
+      </ng-container>
+
+      <ng-container *ngIf="isSuccessSendPack">
+        <p>Multicompartment</p>
+      </ng-container>
+    </div>
+  </div>
+
+</div>

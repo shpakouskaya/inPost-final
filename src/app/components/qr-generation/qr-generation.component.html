@@ -1,0 +1,25 @@
+<div class="generate-section container">
+  <ng-container *ngIf="!QRData else qrInfo">
+    <h1>Generuj QR dla:</h1>
+
+    <div class="generate-section-switch">
+      <button (click)="setState(statesEnum.GetPack)">Odbioru</button>
+      <p>|</p>
+      <button (click)="setState(statesEnum.SendPack)">Zwrotu</button>
+    </div>
+
+    <div class="generate-section-input">
+      <p>Kod odbioru</p>
+      <input type="number" (input)="getCodeValue($event)">
+        <p *ngIf="error" class="error-msg">
+          {{ error.msg}}
+        </p>
+      <button (click)="getQR()">Odbierz</button>
+    </div>
+
+  </ng-container>
+
+  <ng-template #qrInfo>
+    <app-qr-info [QRInfo]="QRData"></app-qr-info>
+  </ng-template>
+</div>

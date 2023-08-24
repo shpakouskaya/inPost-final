@@ -1,0 +1,18 @@
+.qr-info-section-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.qr-info-section-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.qr-info-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.qr-date {
+  margin-bottom: 30px;
+}

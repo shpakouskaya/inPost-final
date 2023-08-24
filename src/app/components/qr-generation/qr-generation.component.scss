@@ -1,0 +1,50 @@
+.generate-section {
+  h1 {
+    margin-bottom: 30px;
+  }
+}
+
+.generate-section-switch {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+
+  p {
+    font-size: 30px;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: orange;
+    font-size: 30px;
+  }
+}
+
+.generate-section-input {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  input, button {
+    width: 100%;
+  }
+
+  input {
+    height: 30px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    background-color: orange;
+    color: black;
+    font-size: 30px;
+  }
+}
+
+.error-msg {
+  color: red;
+}

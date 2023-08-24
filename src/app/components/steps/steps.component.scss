@@ -1,0 +1,17 @@
+.steps-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 50px;
+}
+
+.steps {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
