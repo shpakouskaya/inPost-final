@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Observable, of } from "rxjs";
 import { States } from "../shared/enums/states";
-import { errorQR, SuccessGetPack } from "../shared/interfaces/qr-data";
+import { SuccessGetPack } from "../shared/interfaces/qr-data";
 
 @Injectable({
   providedIn: 'root'
