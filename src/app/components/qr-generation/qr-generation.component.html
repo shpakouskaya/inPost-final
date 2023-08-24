@@ -14,7 +14,7 @@
         <p *ngIf="error" class="error-msg">
           {{ error.msg}}
         </p>
-      <button (click)="getQR()">Odbierz</button>
+      <button (click)="customerCode ? getQR() : false" >Odbierz</button>
     </div>
 
   </ng-container>
